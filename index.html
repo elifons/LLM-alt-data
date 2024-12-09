@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="A Language Model-Guided Framework for Mining Time Series with Distributional Shifts">
+  <!-- <meta name="keywords" content="Large Language Models, Time Series Analysis, Taxonomy, Benchmark"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A Language Model-Guided Framework for Mining Time Series with Distributional Shifts</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <script src="./static/js/video_comparison.js"></script>
+</head>
+<body>
+
+<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://jpmorganchase.com">
+      <img src="./static/images/logo.png" alt="Logo">
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="#abstract">Abstract</a>
+      <a class="navbar-item" href="#team">Authors</a>
+      <a class="navbar-item" href="#links">Links</a>
+      <a class="navbar-item" href="#BibTeX">BibTeX</a>
+    </div>
+  </div>
+</nav> -->
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">A Language Model-Guided Framework for Mining Time Series with Distributional Shifts</h1>
+          <!-- <h2 class="subtitle is-4">A Comprehensive Taxonomy and Benchmark</h2> -->
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+            Haibei Zhu,</span>
+            <span class="author-block">
+            <span class="author-block">
+            Yousef El-Laham,</span>
+            <span class="author-block">
+            <span class="author-block">
+            Elizabeth Fons,</span>
+            <span class="author-block">
+              Svitlana Vyetrenko,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">J.P. Morgan AI Research</span>
+            <!-- <span class="author-block"><sup>2</sup>Google Research</span> -->
+          </div>
+          <!-- <div class="is-size-5 publication-authors">
+            <span class="author-block">EMNLP 2024</span>
+          </div> -->
+
+<!--
+
+          <div class="is-size-5 publication-authors">
+            <p>Elizabeth Fons, Rachneet Kaur, Soham Palande, Zhen Zeng</p>
+            <p>Tucker Balch, Manuela Veloso, Svitlana Vyetrenko</p>
+            <p><strong>J.P. Morgan AI Research</strong></p>
+            <p><strong>EMNLP 2024</strong></p>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="links">
+  <div class="container is-max-desktop">
+    <!-- <h2 class="title is-3">Links</h2> -->
+    <div class="columns is-centered">
+      <div class="column has-text-centered">
+        <!-- <a href="https://arxiv.org/pdf/2024.emnlp-main.1204.pdf" class="button is-dark is-rounded">
+          <i class="fas fa-file-pdf"></i> Paper (PDF)
+        </a> -->
+        <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2406.05249" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>Arxiv</span>
+                  </a>
+        </span>
+        <span class="link-block">
+                  <a href="mailto:airdata.requests@jpmorgan.com" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fa fa-database"></i>
+                    </span>
+                    <span>Dataset</span>
+                  </a>
+        </span>
+        <!-- <a href="https://arxiv.org/abs/2024.emnlp-main.1204" class="external-link button is-dark is-rounded">
+          <span class="icon">
+            <i class="ai ai-arxiv">
+              ::before
+            </i>
+          </span>
+          <span>arXiv</span>
+        </a> -->
+        <!-- <a href="mailto:airdata.requests@jpmorgan.com" class="button is-dark is-rounded">
+          <i class="fab fa-table"></i> Dataset
+        </a> -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="teaser">
+  <div class="container is-max-desktop">
+      <img src="./static/images/pipeline_overview.png" alt="Proposed Pipeline">
+  </div>
+</section>
+
+<section class="section" id="abstract">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Abstract</h2>
+    <p>
+      <!-- Large Language Models (LLMs) offer potential for automatic time series analysis and reporting,
+      which is critical across many domains. In this work, we propose a framework for rigorously
+      evaluating LLM capabilities on time series understanding, encompassing univariate and multivariate forms.
+      We introduce a comprehensive taxonomy of time series features and synthesize a diverse dataset
+      for systematic evaluation. Our experiments reveal the strengths and limitations of LLMs in this domain,
+      shedding light on their suitability for automated time series annotation and summarization. -->
+      Effective utilization of time series data is often constrained by the scarcity of data quantity that reflects complex dynamics, especially under distributional shifts. This paper presents an approach that utilizes large language models and data source software interfaces to collect time series datasets. This approach enlarges the data quantity and diversity when the original data is limited or lacks essential properties. We demonstrate the effectiveness of the collected datasets through utility examples and show how time series forecasting foundation models fine-tuned on these datasets achieve better performance than those without fine-tuning.
+      </p>
+  </div>
+</section>
+
+<section class="section" id="dataset">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Dataset</h2>
+    <p>
+      To access the dataset, please reach out via email at <a href="mailto:airdata.requests@jpmorgan.com">airdata.requests@jpmorgan.com</a>.
+    </p>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{zhu2024lmframework,
+  author    = {Haibei Zhu and Yousef El-Laham and Elizabeth Fons and Svitlana Vyetrenko},
+  title     = {A Language Model-Guided Framework for Mining Time Series with Distributional Shifts},
+  booktitle = {Time Series in the Age of Large Models: Workshop at the Conference on Neural Information Processing Systems (NeurIPS)},
+  year      = {2024},
+}
+</code></pre>
+  </div>
+</section>
+
+<!-- <footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        This website is licensed under a
+        <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
+          Creative Commons Attribution-ShareAlike 4.0 International License
+        </a>.
+      </p>
+      <p>
+        Website created by <a href="https://jpmorganchase.com">JP Morgan AI Research</a>.
+      </p>
+    </div>
+  </div>
+</footer> -->
+
+</body>
+</html>
